@@ -1,0 +1,23 @@
+What is React?
+  - a JS framework developed & maintained by Facebook
+
+What is a library?
+  - stored collections of code-blocks, functions, classes which can be accessed easily later.
+
+What is a single-page application?
+  - an application which has only one interface
+
+What is a component?
+  - such as reusable elements/collection of elements/elements with logic
+
+What is the latest version of React?
+  - v18.2.0 [29/08/2023]
+  
+What is DOM?
+  - Document-Object-Model
+
+What is React Virtual DOM?
+  - same as the browser's DOM but its virtually rely on commands/input. VDOM doesn't interact with all the elements direcly as browser's DOM. It logically validate which elements needed to be changed & make the changes only for them.
+
+What does a web application or a website(composed of) have?
+  - text & protocals, resourse files/file locations

@@ -1,0 +1,17 @@
+What is an HTML element?
+  - peice of markup laguage for websites to indicate a begining or end of a content
+
+How to write a self closing HTML element?
+  - just like regular opening tag but uses a '/' symbole right after the '<' symbole in closing tag
+
+What is an HTML attribute? Write some of them
+  - a property to define element logics/structure
+
+What is JSX?
+  - combination of Javascript & XML. JSX helps to write HTML within Javascript.
+
+What is babel?
+  - babel is library that transpile JSX to pure Javascript when rendering the code to DOM
+
+What is a transpiler?
+  - DOM doesn't understand JSX directly. so a 'Transpiler' has to convert JSX to plane-Javascript.

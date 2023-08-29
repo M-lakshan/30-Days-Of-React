@@ -1,0 +1,14 @@
+Why did you chose to use react?
+  - open-source
+  - high-demand on job market
+  - large community compared to other frameworks
+  - easy to follow-up with intermediate web development knowledge
+  - fast & relieable compare to other frameworks
+
+What measures do you use to know popularity?
+  - community distribution
+  - support access
+  - opportunities based on the job market
+
+What is more popular, React or Vue ?
+  - React
