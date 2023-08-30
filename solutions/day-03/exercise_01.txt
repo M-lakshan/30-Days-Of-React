@@ -1,0 +1,32 @@
+# Q 01 ] What is a module?
+  - a combination of some logic + single method or multiple methods that can be imported or exported when needed
+
+# Q 02 ] What is a package?
+  - a collection of modules
+
+# Q 03 ] What is the difference between a module and a package?
+  - a package works as a directory of multiple modules that work all together in the same manner while a module is a single block of logics + method/s that work according to a specific route.
+
+# Q 04 ] What is NPM?
+  - Node-Package-Manager
+
+# Q 05 ] What is Webpack?
+  - a module bundler
+
+# Q 06 ] How do you create a new React project?
+  - initiate "npx create-react-app {'name_of_your_project'}" in terminal when using NODE.js
+
+# Q 07 ] What are the files and folders inside a project folder(package.json, package-lock.json or yarn. lock, .gitignore, node_modules and public)?
+  - root folder (package.json, .gitignore file, markdown file)
+  - src folder (App.js,App.css,index.js & other components)
+  - node_modules folder (necessary node packages for the applications)
+  - public folder (the one & only HTML file that the application runs on)
+
+# Q 08 ] What is your favorite code editor (I believe that it is Visual Studio Code)?
+  - Yes VS Code
+  
+# Q 09 ] Add different Visual Studio Code extensions to improve your productivity(eg. prettier, ESLint etc).
+  - Colorize
+
+# Q 10 ] Try to make a different custom module in a different file and import it to index.js.
+  - will be completed in an upcoming exercise
