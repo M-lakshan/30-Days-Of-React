@@ -1,8 +1,8 @@
 import './App.css';
 
-cosnt AppTitle = () => <h1>Subscribe</h1>
+const AppTitle = () => <h1>Subscribe</h1>
 
-cosnt AppDesc = () => <p>sign up your email address to recieve news and updates.</p>
+const AppDesc = () => <p>sign up your email address to recieve news and updates.</p>
 
 const AppForm = () => {
   return (<form>
