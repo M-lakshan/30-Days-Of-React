@@ -1,0 +1,14 @@
+#Q 01] What is props in a React component ?
+  - props is a special keyword in REACT reserved for passing properties as an object in 'parent to child' hierachy
+
+#Q 02] How do you access props in a React component ?
+  - using 'props' keyword just like accessing a regular object
+
+#Q 03] What data types can we pass as props to components ?
+  - boolean, string, number, array , object
+
+#Q 04] What is a propTypes?
+  - propTypes is a package that helps us to assign the data types
+
+#Q 05] What is a default propTypes?
+  - default values/placeholders for those properties we are passing in
