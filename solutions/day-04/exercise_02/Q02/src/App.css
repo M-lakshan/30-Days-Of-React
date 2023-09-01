@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: skyblue;
+  border-radius: 10px;
+  min-width: 900px;
+  width: 90%;
+  font-family: 'Oxanium', cursive;
+  padding: 20px 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 55%;
+  min-width: 580px;
+}
+
+form > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  margin: 20px 20px 30px;
+}
+
+input {
+  width: 160px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-style: 20px;
+  padding: 10px;
+}
+
+form>button {
+  display: block;
+  cursor: pointer;
+  width: 280px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-style: 24px;
+  background: #FA7B7B;
+  color: white;
+  margin: 10px 0px 20px 0px;
+}
