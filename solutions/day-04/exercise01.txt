@@ -1,0 +1,30 @@
+#Q 01] What is the difference between a regular function and an arrow function?
+  - regular function can be either returning a value or no return at all but an arrow function always has to return something
+
+#Q 02] What is a React Component?
+  - a reusable method or a class containing JSX element/s
+
+#Q 03] How do you make a React functional component?
+  - same as creating a regular funtion & at the end we have to return JSX element/s or null
+
+#Q 04] What is the difference between a pure JavaScript function and a functional component?
+  - same as a regular funtion but at the end we have to return JSX element/s or null & since this being a component the function naming should be in 'CamelCase' format
+
+#Q 05] How small is a React component?
+  - considering the number or code lines we had used in a functional component we can re-structure it to an arrow-function
+
+#Q 06] Can we make a button or input field component?
+  - yes
+
+#Q 07] Make a reusable Button component.
+  - const ButtonElement = () => <button type="button">click</button>
+    ReactDom.render(<ButtonElement />,document.getElementById("root"));
+
+#Q 08] Make a reusable InputField component.
+  - const InputElement = () => <input type="text" placeHolder="enter your name" />
+    ReactDom.render(<InputElement />,document.getElementById("root"));
+
+#Q 09] Make a reusable alert box component with one div parent element and one p child element of the div(warning alert box, success alert box).
+  - let alert = (-some-condition-) ? "success" : "warning";
+    const AlertBox = () => <div className="container"><p>{alert}</p><button>OK</button></div>
+    ReactDom.render(<InputElement />,document.getElementById("root"));
