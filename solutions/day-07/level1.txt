@@ -1,0 +1,27 @@
+#Q 01] How do you write a pure JavaScript function
+  - using the reserved keyword 'function' & defining a name for the function with parathesis + couple of square brackets following like this : function 'name_for_function' () { 'logic' }
+
+#Q 02] What is inheritance and how do you make a child from a parent class?
+  - inheriting parent's properties by simple means using the reserved keyword 'extends'
+
+#Q 03] What is class based React component?
+  - not just like a regular functional component, a class component preserves a state within itself for the element we are rendering
+
+#Q 04] What is the difference between a functional React component and a class-based React component?
+  - A class-based component can have event listeners, state setters and class attributes but a functional component does not
+
+#Q 05] When do we need to use class-based components instead of functional components?
+  - has more logic within a component & needs to maintain a state
+
+#Q 06] What are the use cases of the class-based component?
+  - Managing error Boundaries
+  - Running logic connected to a 'Next DOM Update'
+
+#Q 07] Which type of component do use most frequently? functional or class-based component
+  - functional
+
+#Q 08] What is the React life cycle? (not covered yet)
+  - Each component in React has a lifecycle that we can monitor and manipulate during its three main phases. Those three phases are: Mounting(putting elements into the DOM), Updating(when a component is updated), and Unmounting(when a component is removed from the DOM).
+
+#Q 09] What is the state in React? (not covered yet)
+  - a component's memory to be simple
