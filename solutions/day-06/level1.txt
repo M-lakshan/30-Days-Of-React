@@ -1,0 +1,22 @@
+#Q 01] Why do you need to map an array?
+  - retrieve the elements in a more elegant & efficient way other than looping
+
+#Q 02] Why do we need keys during mapping an array?
+  - to identify each and every element uniquely
+
+#Q 03] What is the importance of destructuring your code?
+  - 1. To get values in a variable from Objects & Arrays
+  - 2. To combine an array at any place with another array.
+  - 3. To change only a desired property in an object
+  - 4. To create a shallow copy of objects
+  - 5. To extract values from parameters into standalone variables
+  - 6. To get dynamic key values from Objects & Arrays
+  - 7. To build an object from another object with some default values
+  - 8. To swap values
+  - 9. To get a subset of an object
+  - 10. To do Array to Object conversion:
+  - 11. To set default values in a function.
+  - 12. To get properties such as length from an array, function name, number of arguments etc.
+
+#Q 04] Does destructuring make your code clean and easy to read?
+  - yes
