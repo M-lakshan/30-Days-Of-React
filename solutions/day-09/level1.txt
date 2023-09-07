@@ -1,0 +1,8 @@
+ #Q 01] What is conditional rendering?
+  - rendering JSX based on conditions or state of the component
+  
+#Q 02] How do you implement conditional rendering?
+  - using if-else statements, ternary operations, short-circuit logic
+
+#Q 03] Which method of conditional rendering do you prefer to use?
+  - most of the time: ternary statements
