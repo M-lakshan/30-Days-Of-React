@@ -1,8 +1,15 @@
- #Q 01] What is conditional rendering?
-  - rendering JSX based on conditions or state of the component
-  
-#Q 02] How do you implement conditional rendering?
-  - using if-else statements, ternary operations, short-circuit logic
+#Q 01] What was your state today? Are you happy? I hope so. If you manage to make it this far you should be happy.
+  - HAPPY
 
-#Q 03] Which method of conditional rendering do you prefer to use?
-  - most of the time: ternary statements
+#Q 02] What is state in React?
+  - a component's memory to be simple
+
+#Q 03] What is the difference between props and state in React?
+  - props is a reserved keyword for passing an object containing various user-defined properties with values during the component's initial state
+  - state is an object for identify what is the current status of the component which regularly changes due to user ineractions
+
+#Q 04] How do you access state in a React component?
+  - using 'this' keyword -> this.state
+
+#Q 05] How do you set a set in a React component?
+  - within the constructor function of the class component. simply initialte an object named 'state' after the super(props);
