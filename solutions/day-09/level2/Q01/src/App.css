@@ -1,0 +1,234 @@
+:root {
+  --background_dark_i: #a8a8a8;
+  --background_dark_ii: #3C3C3C;
+  --background_light_i: #f5f9ff;
+  --background_light_ii: #b8deff;
+  --font_default: #fff;
+  --font_theme: #111111;
+  --bs_dark: rgba(0, 0, 0, 0.5);
+  --bs_light: rgba(188, 196, 255, 0.5);
+  --season_spring: #3cc68b;
+  --season_summer: #ecbf6d;
+  --season_autum: #f07c58;
+  --season_winter: #37cbe8;
+  --season_spring_alt: #187A50;
+  --season_summer_alt: #A17D3A;
+  --season_autum_alt: #A3482C;
+  --season_winter_alt: #16859C;
+  --season_spring_bs: #66FFBD;
+  --season_summer_bs: #FFD88F;
+  --season_autum_bs: #FF9778;
+  --season_winter_bs: #57E3FF;
+}
+
+html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: fit-content;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--font_theme);
+  background: var(--background_light_i);
+  transition: 280ms ease-out;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+  color: var(--font_theme);
+  background: var(--background_light_ii);
+  transition: 280ms ease-out;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0%;
+  height: 0%;
+  width: 0%;
+}
+
+.section_left > h1, .section_left > h2 {
+  margin: 20px 15px 30px 15px;
+  padding: 0px 20px;
+  font-weight: 400;
+  text-indent: 30px;
+}
+
+.section_left > h1 {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 600;
+  margin-bottom: 0%;
+  letter-spacing: 10px;
+  text-indent: 0px;
+  font-size: 40px;
+}
+
+header > div {
+  width: 100%;
+}
+
+.section_right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.section_right > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  width: 60px;
+  padding: 3px;
+  border: none;
+  border-radius: 50px;
+  background: var(--font_default);
+  margin-right: 50px;
+  transition: 280ms ease-out;
+}
+
+.section_right > label > span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: var(--background_light_ii);
+  transition: 280ms ease-out;
+}
+
+#theme_toggler:checked+label > span {
+  transform: translateX(15px);
+  transition: 300ms;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: 280ms ease-out;
+}
+
+footer > p {
+  display: block;
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+  color: var(--font_theme);
+  transition: 280ms ease-out;
+}
+
+/* Header */
+
+.App.Spring>header {
+  background: var(--season_spring_bs) !important;
+}
+
+.App.Summer>header {
+  background: var(--season_summer_bs) !important;
+}
+
+.App.Autum>header {
+  background: var(--season_autum_bs) !important;
+}
+
+.App.Winter>header {
+  background: var(--season_winter_bs) !important;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main > h3 {
+  transform: translate(0%, -200%);
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: var(--font_default);
+}
+
+.App.Spring>main {
+  background: var(--season_spring) !important;
+}
+
+.App.Summer>main {
+  background: var(--season_summer) !important;
+}
+
+.App.Autum>main {
+  background: var(--season_autum) !important;
+}
+
+.App.Winter>main {
+  background: var(--season_winter) !important;
+}
+
+/* .App.Spring>main>h3>span { */
+.App.Spring>main>h3 {
+  color: var(--season_spring_alt) !important;
+  text-shadow: 1px 2px 3px var(--season_spring_bs);
+}
+
+/* .App.Summer>main>h3>span { */
+.App.Summer>main>h3 {
+  color: var(--season_summer_alt) !important;
+  text-shadow: 1px 2px 3px var(--season_summer_bs);
+}
+
+/* .App.Autum>main>h3>span { */
+.App.Autum>main>h3 {
+  color: var(--season_autum_alt) !important;
+  text-shadow: 1px 2px 3px var(--season_autum_bs);
+}
+
+/* .App.Winter>main>h3>span { */
+.App.Winter>main>h3 {
+  color: var(--season_winter_alt) !important;
+  text-shadow: 1px 2px 3px var(--season_winter_bs);
+}
+
+/* Footer */
+
+.App.Spring>footer {
+  background: var(--season_spring_bs) !important;
+}
+
+.App.Summer>footer {
+  background: var(--season_summer_bs) !important;
+}
+
+.App.Autum>footer {
+  background: var(--season_autum_bs) !important;
+}
+
+.App.Winter>footer {
+  background: var(--season_winter_bs) !important;
+}
