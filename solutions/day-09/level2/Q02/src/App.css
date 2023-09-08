@@ -1,0 +1,234 @@
+:root {
+  --background_dark_i: #a8a8a8;
+  --background_dark_ii: #3C3C3C;
+  --background_light_i: #f5f9ff;
+  --background_light_ii: #b8deff;
+  --font_default: #fff;
+  --font_theme: #111111;
+  --bs_dark: rgba(0, 0, 0, 0.5);
+  --bs_light: rgba(188, 196, 255, 0.5);
+  --daytime_morning: #1a9fc8;
+  --daytime_afternoon: #8fbd2c;
+  --daytime_evening: #d06726;
+  --daytime_night: #8c32b0;
+  --daytime_morning_alt: #3BD1FF;
+  --daytime_afternoon_alt: #C9FF54;
+  --daytime_evening_alt: #FF8E47;
+  --daytime_night_alt: #D060FC;
+  --daytime_morning_bs: #08607A;
+  --daytime_afternoon_bs: #51700F;
+  --daytime_evening_bs: #853A0C;
+  --daytime_night_bs: #4C1263;
+}
+
+html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: fit-content;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--font_theme);
+  background: var(--background_light_i);
+  transition: 280ms ease-out;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+  color: var(--font_default);
+  background: var(--background_light_ii);
+  transition: 280ms ease-out;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0%;
+  height: 0%;
+  width: 0%;
+}
+
+.section_left > h1, .section_left > h2 {
+  margin: 20px 15px 30px 15px;
+  padding: 0px 20px;
+  font-weight: 400;
+  text-indent: 30px;
+}
+
+.section_left > h1 {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 600;
+  margin-bottom: 0%;
+  letter-spacing: 10px;
+  text-indent: 0px;
+  font-size: 40px;
+}
+
+header > div {
+  width: 100%;
+}
+
+.section_right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.section_right > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  width: 60px;
+  padding: 3px;
+  border: none;
+  border-radius: 50px;
+  background: var(--font_default);
+  margin-right: 50px;
+  transition: 280ms ease-out;
+}
+
+.section_right > label > span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: var(--background_light_ii);
+  transition: 280ms ease-out;
+}
+
+#theme_toggler:checked+label > span {
+  transform: translateX(15px);
+  transition: 300ms;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: 280ms ease-out;
+}
+
+footer > p {
+  display: block;
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+  color: var(--font_default);
+  transition: 280ms ease-out;
+}
+
+/* Header */
+
+.App.Morning>header {
+  background: var(--daytime_morning_bs) !important;
+}
+
+.App.Afternoon>header {
+  background: var(--daytime_afternoon_bs) !important;
+}
+
+.App.Evening>header {
+  background: var(--daytime_evening_bs) !important;
+}
+
+.App.Night>header {
+  background: var(--daytime_night_bs) !important;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+main > h3 {
+  transform: translate(0%, -200%);
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: var(--font_default);
+}
+
+.App.Morning>main {
+  background: var(--daytime_morning) !important;
+}
+
+.App.Afternoon>main {
+  background: var(--daytime_afternoon) !important;
+}
+
+.App.Evening>main {
+  background: var(--daytime_evening) !important;
+}
+
+.App.Night>main {
+  background: var(--daytime_night) !important;
+}
+
+/* .App.Morning>main>h3>span { */
+.App.Morning>main>h3 {
+  color: var(--daytime_morning_alt) !important;
+  text-shadow: 1px 2px 3px var(--daytime_morning_bs);
+}
+
+/* .App.Afternoon>main>h3>span { */
+.App.Afternoon>main>h3 {
+  color: var(--daytime_afternoon_alt) !important;
+  text-shadow: 1px 2px 3px var(--daytime_afternoon_bs);
+}
+
+/* .App.Evening>main>h3>span { */
+.App.Evening>main>h3 {
+  color: var(--daytime_evening_alt) !important;
+  text-shadow: 1px 2px 3px var(--daytime_evening_bs);
+}
+
+/* .App.Night>main>h3>span { */
+.App.Night>main>h3 {
+  color: var(--daytime_night_alt) !important;
+  text-shadow: 1px 2px 3px var(--daytime_night_bs);
+}
+
+/* Footer */
+
+.App.Morning>footer {
+  background: var(--daytime_morning_bs) !important;
+}
+
+.App.Afternoon>footer {
+  background: var(--daytime_afternoon_bs) !important;
+}
+
+.App.Evening>footer {
+  background: var(--daytime_evening_bs) !important;
+}
+
+.App.Night>footer {
+  background: var(--daytime_night_bs) !important;
+}
