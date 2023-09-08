@@ -1,0 +1,167 @@
+:root {
+  --background_dark_i: #a8a8a8;
+  --background_dark_ii: #3C3C3C;
+  --font_default: #fff;
+  --font_theme: #e3e61f;
+}
+
+html, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: fit-content;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: var(--font_theme);
+  background: var(--background_light_i);
+  transition: 280ms ease-out;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: fit-content;
+  width: 100%;
+  color: var(--font_default);
+  background: var(--background_dark_ii);
+  transition: 280ms ease-out;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0%;
+  height: 0%;
+  width: 0%;
+}
+
+.section_left > h1, .section_left > h2 {
+  margin: 20px 15px 30px 15px;
+  padding: 0px 20px;
+  font-weight: 400;
+  text-indent: 30px;
+}
+
+.section_left > h1 {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 600;
+  margin-bottom: 0%;
+  letter-spacing: 10px;
+  text-indent: 0px;
+  font-size: 40px;
+}
+
+header > div {
+  width: 100%;
+}
+
+.section_right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.section_right > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  width: 60px;
+  padding: 3px;
+  border: none;
+  border-radius: 50px;
+  background: var(--font_default);
+  margin-right: 50px;
+  transition: 280ms ease-out;
+}
+
+.section_right > label > span {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: var(--background_light_ii);
+  transition: 280ms ease-out;
+}
+
+#theme_toggler:checked+label > span {
+  transform: translateX(15px);
+  transition: 300ms;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transition: 280ms ease-out;
+  background: var(--background_dark_ii);
+}
+
+footer > p {
+  display: block;
+  width: 100%;
+  margin: 0%;
+  text-align: center;
+  color: var(--font_default);
+  transition: 280ms ease-out;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 20px;
+  background: var(--background_dark_i);
+}
+
+main > h3 {
+  color: var(--background_dark_ii);
+  font-size: 30px;
+  transform: translate(0%,-200%);
+  letter-spacing: 2px;
+}
+
+main > h3 > i {
+  animation: pulse 5s infinite;
+}
+
+.App.fetched_true {
+  animation: bg_change 5s 1;
+}
+
+@keyframes pulse {
+  from {
+    transform: rotate(90deg);
+  } to {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes bg_change {
+  from {
+    background: #fff;
+  } to {
+    background: #a8a8a8;
+  }
+}
