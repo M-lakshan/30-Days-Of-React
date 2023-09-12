@@ -1,0 +1,26 @@
+@mixin dp_block($mode, $h, $w) {
+  display: $mode;
+  height: $h;
+  width: $w;
+}
+
+@mixin dp_flex($dir, $cont_align, $cont_justify, $h, $w) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $cont_align;
+  justify-content: $cont_justify;
+  height: $h;
+  width: $w;
+}
+
+@mixin pad_n_marg($pad, $marg) {
+  padding: $pad;
+  margin: $marg;
+}
+
+@mixin box-shadow($x, $y, $blur, $c) {
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}

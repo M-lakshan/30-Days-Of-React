@@ -1,0 +1,158 @@
+footer {
+  @include dp_block(grid, fit-content, 100%);
+  grid-template-columns: minmax(100%, auto);
+  grid-template-rows: auto;
+  font-family: $fm_Poppins;
+
+  section {
+    @include dp_flex(column, center, center, inherit, 100%);
+    max-height: 400px;
+    @include pad_n_marg(10px, 0%);
+  }
+
+  .sec_left {
+    @include dp_flex(row, center, space-around, inherit, 100%);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: $gray_fade;
+
+    a {
+      @include dp_block(inline-block, fit-content, 100%);
+      font-family: sans-serif;
+      letter-spacing: 1px;
+      color: $font_default_hover_alt;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2.6em;
+      padding: 10px 0px;
+      transition: 280ms ease-out;
+
+      span {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        transition: 280ms ease-in;
+        color: $font_default;
+      }
+    }
+  }
+
+  .sec_right {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: linear-gradient(to top, $gray_alt 90%, $gray_dark_grd);
+    @include pad_n_marg(30px, 0%);
+
+    .contact_holder {
+      @include dp_flex(column, center, center, 40%, 100%);
+      @include pad_n_marg(5px, 0%);
+      
+      p {
+        @include dp_flex(row, center, left, inherit, fit-content);
+        font-size: 1.4em;
+        color: $font_default;
+        padding: 5px 0px;
+
+        span {
+          font-weight: 400;
+        }
+      } 
+    }
+
+    .copyright_holder {
+      @include dp_block(inline-block, fit-content, 100%);
+      @include pad_n_marg(5px, 0%);
+
+      .desc {
+        @include dp_block(inline-block, fit-content, 100%);
+        text-align: center;
+        font-size: 1.2em;
+        margin: 20px 0px;
+      }
+
+      .website, .copyright {
+        width: 100%;
+        text-align: center;
+        color: $font_theme_default;
+      }
+
+      .website {
+        font-style: oblique;
+        margin-top: 2em;
+      }
+    }
+  }
+
+  @media screen and (min-width: 45em) { //720px
+    grid-template-columns: 1fr minmax(320px, 45%);
+    grid-template-rows: 1fr;
+
+    .sec_left {
+      @include dp_flex(column, center, center, 100%, 100%);
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: center;
+
+      a {
+        font-size: 1.8em;
+        text-align: left;
+        text-indent: 15%;
+        width: 350px;
+
+        span {
+          display: inline-block;
+          font-size: 1rem;
+          text-indent: 15px;
+        } 
+      }
+    }
+
+    .sec_right {
+      grid-column: 2/3;
+      grid-row: 1/2 !important;
+    }
+  }
+}
+
+//theme_changed
+
+.App.theme_changed > footer {
+
+  .sec_left {
+    background: $gray_dark;
+
+    a {
+      color: $font_theme_default_hover;
+      
+      &:hover {
+        color: $font_theme_default;
+      }
+    }
+  }
+
+  .sec_right {
+    background: linear-gradient(to top, $footer_tab_right_theme 90%, $gray_medium_grd);
+
+    .contact_holder {
+  
+      p {
+        color: $font_theme_default;
+      }
+    }
+
+    .copyright_holder {
+  
+      .desc {
+        color: $font_theme_default;
+      }
+
+      .website, .copyright {
+        width: 100%;
+        text-align: center;
+        color: $font_default;
+      }
+    }
+  }
+}

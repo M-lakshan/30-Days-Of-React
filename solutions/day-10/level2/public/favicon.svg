@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{font-family:'Lobster-Regular';}
+	.st3{font-size:14px;}
+	.st4{clip-path:url(#SVGID_3_);fill:#FFFFFF;}
+	.st5{clip-path:url(#SVGID_5_);fill:url(#SVGID_6_);}
+	.st6{clip-path:url(#SVGID_8_);fill:#FFFFFF;}
+	.st7{clip-path:url(#SVGID_10_);fill:url(#SVGID_11_);}
+	.st8{clip-path:url(#SVGID_13_);fill:none;stroke:#FFFFFF;stroke-width:0.1;stroke-miterlimit:10;}
+</style>
+<ellipse class="st0" cx="15.92" cy="16" rx="14.06" ry="13.5"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4.2232" y1="23.1838" x2="28.1882" y2="8.4632">
+	<stop  offset="0" style="stop-color:#34073D"/>
+	<stop  offset="0.1565" style="stop-color:#440940;stop-opacity:0.9687"/>
+	<stop  offset="0.462" style="stop-color:#6E0E49;stop-opacity:0.9076"/>
+	<stop  offset="0.883" style="stop-color:#B01658;stop-opacity:0.8234"/>
+	<stop  offset="1" style="stop-color:#C4185C;stop-opacity:0.8"/>
+</linearGradient>
+<ellipse class="st1" cx="15.92" cy="16" rx="14.06" ry="13.5"/>
+<g>
+	<defs>
+		<rect x="4.62" y="10.31" width="15.38" height="12.98"/>
+		<text id="SVGID_2_" transform="matrix(1 0 0 1 4.6172 20.1106)" class="st2 st3">W</text>
+	</defs>
+	<clipPath id="SVGID_3_">
+		<use xlink:href="#SVGID_2_"  style="overflow:visible;"/>
+	</clipPath>
+	<ellipse class="st4" cx="14.84" cy="16.29" rx="14.06" ry="13.5"/>
+</g>
+<g>
+	<defs>
+		<rect x="5.28" y="10.1" width="15.38" height="12.98"/>
+		<text id="SVGID_4_" transform="matrix(1 0 0 1 5.2845 19.8951)" class="st2 st3">W</text>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+	</clipPath>
+	<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="5.6227" y1="25.3623" x2="26.1154" y2="6.0992">
+		<stop  offset="0" style="stop-color:#FF0F7B"/>
+		<stop  offset="1" style="stop-color:#F89B29"/>
+	</linearGradient>
+	<ellipse class="st5" cx="15.5" cy="16.07" rx="14.06" ry="13.5"/>
+</g>
+<g>
+	<defs>
+		<rect x="14.96" y="15.14" width="13.38" height="12.98"/>
+		<text id="SVGID_7_" transform="matrix(1 0 0 1 14.9604 24.9378)" class="st2 st3">C</text>
+	</defs>
+	<clipPath id="SVGID_8_">
+		<use xlink:href="#SVGID_7_"  style="overflow:visible;"/>
+	</clipPath>
+	<ellipse class="st6" cx="16.18" cy="16.12" rx="14.06" ry="13.5"/>
+</g>
+<g>
+	<defs>
+		<rect x="15.62" y="15.02" width="13.38" height="12.98"/>
+		<text id="SVGID_9_" transform="matrix(1 0 0 1 15.6172 24.8213)" class="st2 st3">C</text>
+	</defs>
+	<clipPath id="SVGID_10_">
+		<use xlink:href="#SVGID_9_"  style="overflow:visible;"/>
+	</clipPath>
+	<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="6.9554" y1="25.2885" x2="27.448" y2="6.0254">
+		<stop  offset="0" style="stop-color:#FF0F7B"/>
+		<stop  offset="1" style="stop-color:#F89B29"/>
+	</linearGradient>
+	<ellipse class="st7" cx="16.84" cy="16" rx="14.06" ry="13.5"/>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M22.01,11.52V9.79h0.24v1.73H22.01z M22.24,10.86v-0.23h0.37c0.1,0,0.17-0.03,0.23-0.08
+			c0.05-0.05,0.08-0.12,0.08-0.22c0-0.1-0.03-0.18-0.08-0.23c-0.05-0.06-0.13-0.08-0.23-0.08h-0.36l-0.03-0.23h0.39
+			c0.18,0,0.32,0.05,0.42,0.14c0.1,0.09,0.15,0.22,0.15,0.39c0,0.17-0.05,0.31-0.15,0.41c-0.1,0.1-0.24,0.14-0.42,0.14H22.24z
+			 M22.94,11.52l-0.39-0.82h0.27l0.41,0.82H22.94z"/>
+	</g>
+</g>
+<g>
+	<defs>
+		<ellipse id="SVGID_12_" cx="22.77" cy="11.25" rx="4.95" ry="4.75"/>
+	</defs>
+	<clipPath id="SVGID_13_">
+		<use xlink:href="#SVGID_12_"  style="overflow:visible;"/>
+	</clipPath>
+	<circle class="st8" cx="22.55" cy="10.72" r="1.5"/>
+</g>
+</svg>

@@ -1,0 +1,250 @@
+header {
+  @include dp_flex(row, center, space-around, fit-content, 100%);
+
+  .tab_tile {
+    cursor: pointer;
+    position: relative;
+    @include dp_flex(row, center, space-around, 50px, 1000px);
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: -2px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: -50px;
+      bottom: -49px;
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: 280ms ease-out;
+      transform: translate(-50%, 50%);
+      z-index: 8;
+
+      a {
+        text-decoration: none;
+        color: inherit !important;
+      }
+    }
+  }
+
+  .tab_tile.active {
+    border-bottom: $font_default_hover_alt 50px solid;
+    color: $font_theme_default;
+
+    &::after {
+      border-left: 80px $font_default_hover_alt solid;
+    }
+  }
+
+  .tab_tile.pre_active {
+    border-bottom: $gray 50px solid;
+    color: $font_default;
+
+    &::after {
+      border-left: 80px $gray solid;
+    }
+  }
+
+  .tab_tile.pre_deactive {
+    border-bottom: $gray_alt 50px solid;
+    color: $font_default;
+    
+    &::after {
+      border-left: 80px $gray_alt solid;
+    }
+  }
+
+  .tab_tile.deactive {
+    border-bottom: $gray_light 50px solid;
+    color: $font_default;
+
+    &::after {
+      border-left: 80px $gray_light solid;
+    }
+  }
+
+  .tab_tile_i, .tab_tile_ii, .tab_tile_iii, .tab_tile_iv {
+    border-right: 25px solid transparent;
+
+    &:hover {
+      color: $font_theme_default;
+      border-bottom: $font_default_hover 50px solid;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: -50px;
+        bottom: -49px;
+        border-right: 25px solid transparent;
+        border-left: 80px solid $font_default_hover;
+      }
+    }
+  } 
+
+  .theme_changer {
+    font-size: 1.8em;
+    max-width: 80px;
+    color: $font_default_hover;    
+    background: $gray_medium;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0px;
+      border-left: 70px $gray_medium solid;
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 8;
+    }
+
+    .fa-moon {
+      display: inline-block;
+      transition: 200ms ease-out;
+    }
+
+    .fa-moon {
+      display: none;
+      transition: 200ms ease-out;
+    }
+
+    &:hover {
+      background: $font_default_hover;
+      color: $font_theme_default;
+      
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        border-left: 70px $font_default_hover solid;
+      }
+
+      .fa-moon {
+        display: inline-block;
+        transition: 200ms ease-in;
+      }
+
+      .fa-sun {
+        display: none;
+        transition: 200ms ease-in;
+      }
+    }
+  }
+
+  .tab_tile_i {
+    z-index: 5;
+  }
+
+  .tab_tile_ii {
+    z-index: 4;
+  }
+
+  .tab_tile_iii {
+    z-index: 3;
+  }
+
+  .tab_tile_iv {
+    z-index: 2;
+  }
+}
+
+//theme_changed
+
+.App.theme_changed > header {
+
+  .tab_tile.active {
+    border-bottom: $font_theme_default_hover_alt 50px solid;
+    color: $font_default;
+
+    &::after {
+      border-left: 80px $font_theme_default_hover_alt solid;
+    }
+  }
+  
+  .tab_tile.pre_active {
+    border-bottom: $gray_light 50px solid;
+    color: $font_theme_default;
+
+    &::after {
+      border-left: 80px $gray_light solid;
+    }
+  }
+
+  .tab_tile.pre_deactive {
+    border-bottom: $gray_medium 50px solid;
+    color: $font_theme_default;
+
+    &::after {
+      border-left: 80px $gray_medium solid;
+    }
+  }
+
+  .tab_tile.deactive {
+    border-bottom: $gray_shade 50px solid;
+    color: $font_theme_default;
+
+    &::after {
+      border-left: 80px $gray_shade solid;
+    }
+  }
+
+  .tab_tile_i, .tab_tile_ii, .tab_tile_iii, .tab_tile_iv {
+
+    &:hover {
+      color: $font_default;
+      border-bottom: $font_theme_default_hover 50px solid;
+
+      &:after {
+        border-left: 80px solid $font_theme_default_hover;
+      }
+    }
+  }
+
+  .theme_changer {
+    color: $font_theme_default_hover;
+    background: $font_default;
+
+    &::after {
+      border-left: 70px $font_default solid;
+    }
+
+    .fa-moon {
+      display: inline-block;
+      transition: 200ms ease-in;
+    }
+
+    .fa-sun {
+      display: none;
+      transition: 200ms ease-in;
+    }
+
+    &:hover {
+      background: $font_theme_default_hover;
+      color: $font_default;
+
+      &:after {
+        border-left: 70px $font_theme_default_hover solid;
+      }
+      
+      .fa-sun {
+        display: inline-block;
+        transition: 200ms ease-in;
+      }
+      
+      .fa-moon {
+        display: none;
+        transition: 200ms ease-in;
+      }
+    }
+  }
+}

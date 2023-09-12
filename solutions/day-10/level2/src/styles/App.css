@@ -1,0 +1,1010 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Kalam:wght@300;400;700&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Sunflower:wght@300;500;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+header .tab_tile {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 1000px;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: -2px;
+}
+header .tab_tile:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -50px;
+  bottom: -49px;
+}
+header .tab_tile p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 280ms ease-out;
+  transform: translate(-50%, 50%);
+  z-index: 8;
+}
+header .tab_tile p a {
+  text-decoration: none;
+  color: inherit !important;
+}
+header .tab_tile.active {
+  border-bottom: #025CBB 50px solid;
+  color: #FFF;
+}
+header .tab_tile.active::after {
+  border-left: 80px #025CBB solid;
+}
+header .tab_tile.pre_active {
+  border-bottom: #c4c4c4 50px solid;
+  color: #111;
+}
+header .tab_tile.pre_active::after {
+  border-left: 80px #c4c4c4 solid;
+}
+header .tab_tile.pre_deactive {
+  border-bottom: #929292 50px solid;
+  color: #111;
+}
+header .tab_tile.pre_deactive::after {
+  border-left: 80px #929292 solid;
+}
+header .tab_tile.deactive {
+  border-bottom: #646464 50px solid;
+  color: #111;
+}
+header .tab_tile.deactive::after {
+  border-left: 80px #646464 solid;
+}
+header .tab_tile_i, header .tab_tile_ii, header .tab_tile_iii, header .tab_tile_iv {
+  border-right: 25px solid transparent;
+}
+header .tab_tile_i:hover, header .tab_tile_ii:hover, header .tab_tile_iii:hover, header .tab_tile_iv:hover {
+  color: #FFF;
+  border-bottom: #007CFF 50px solid;
+}
+header .tab_tile_i:hover:after, header .tab_tile_ii:hover:after, header .tab_tile_iii:hover:after, header .tab_tile_iv:hover:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -50px;
+  bottom: -49px;
+  border-right: 25px solid transparent;
+  border-left: 80px solid #007CFF;
+}
+header .theme_changer {
+  font-size: 1.8em;
+  max-width: 80px;
+  color: #007CFF;
+  background: #464646;
+}
+header .theme_changer:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  border-left: 70px #464646 solid;
+}
+header .theme_changer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+}
+header .theme_changer .fa-moon {
+  display: inline-block;
+  transition: 200ms ease-out;
+}
+header .theme_changer .fa-moon {
+  display: none;
+  transition: 200ms ease-out;
+}
+header .theme_changer:hover {
+  background: #007CFF;
+  color: #FFF;
+}
+header .theme_changer:hover:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  border-left: 70px #007CFF solid;
+}
+header .theme_changer:hover .fa-moon {
+  display: inline-block;
+  transition: 200ms ease-in;
+}
+header .theme_changer:hover .fa-sun {
+  display: none;
+  transition: 200ms ease-in;
+}
+header .tab_tile_i {
+  z-index: 5;
+}
+header .tab_tile_ii {
+  z-index: 4;
+}
+header .tab_tile_iii {
+  z-index: 3;
+}
+header .tab_tile_iv {
+  z-index: 2;
+}
+
+.App.theme_changed > header .tab_tile.active {
+  border-bottom: #DAA520 50px solid;
+  color: #111;
+}
+.App.theme_changed > header .tab_tile.active::after {
+  border-left: 80px #DAA520 solid;
+}
+.App.theme_changed > header .tab_tile.pre_active {
+  border-bottom: #646464 50px solid;
+  color: #FFF;
+}
+.App.theme_changed > header .tab_tile.pre_active::after {
+  border-left: 80px #646464 solid;
+}
+.App.theme_changed > header .tab_tile.pre_deactive {
+  border-bottom: #464646 50px solid;
+  color: #FFF;
+}
+.App.theme_changed > header .tab_tile.pre_deactive::after {
+  border-left: 80px #464646 solid;
+}
+.App.theme_changed > header .tab_tile.deactive {
+  border-bottom: #323232 50px solid;
+  color: #FFF;
+}
+.App.theme_changed > header .tab_tile.deactive::after {
+  border-left: 80px #323232 solid;
+}
+.App.theme_changed > header .tab_tile_i:hover, .App.theme_changed > header .tab_tile_ii:hover, .App.theme_changed > header .tab_tile_iii:hover, .App.theme_changed > header .tab_tile_iv:hover {
+  color: #111;
+  border-bottom: #FFB600 50px solid;
+}
+.App.theme_changed > header .tab_tile_i:hover:after, .App.theme_changed > header .tab_tile_ii:hover:after, .App.theme_changed > header .tab_tile_iii:hover:after, .App.theme_changed > header .tab_tile_iv:hover:after {
+  border-left: 80px solid #FFB600;
+}
+.App.theme_changed > header .theme_changer {
+  color: #FFB600;
+  background: #111;
+}
+.App.theme_changed > header .theme_changer::after {
+  border-left: 70px #111 solid;
+}
+.App.theme_changed > header .theme_changer .fa-moon {
+  display: inline-block;
+  transition: 200ms ease-in;
+}
+.App.theme_changed > header .theme_changer .fa-sun {
+  display: none;
+  transition: 200ms ease-in;
+}
+.App.theme_changed > header .theme_changer:hover {
+  background: #FFB600;
+  color: #111;
+}
+.App.theme_changed > header .theme_changer:hover:after {
+  border-left: 70px #FFB600 solid;
+}
+.App.theme_changed > header .theme_changer:hover .fa-sun {
+  display: inline-block;
+  transition: 200ms ease-in;
+}
+.App.theme_changed > header .theme_changer:hover .fa-moon {
+  display: none;
+  transition: 200ms ease-in;
+}
+
+footer {
+  display: grid;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  grid-template-columns: minmax(100%, auto);
+  grid-template-rows: auto;
+  font-family: "Poppins", sans-serif;
+}
+footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 100%;
+  max-height: 400px;
+  padding: 10px;
+  margin: 0%;
+}
+footer .sec_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: inherit;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background: #d7d7d7;
+}
+footer .sec_left a {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  color: #025CBB;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.6em;
+  padding: 10px 0px;
+  transition: 280ms ease-out;
+}
+footer .sec_left a span {
+  display: none;
+}
+footer .sec_left a:hover {
+  cursor: pointer;
+  transition: 280ms ease-in;
+  color: #111;
+}
+footer .sec_right {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background: linear-gradient(to top, #929292 90%, rgba(70, 70, 70, 0.63));
+  padding: 30px;
+  margin: 0%;
+}
+footer .sec_right .contact_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  width: 100%;
+  padding: 5px;
+  margin: 0%;
+}
+footer .sec_right .contact_holder p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  height: inherit;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.4em;
+  color: #111;
+  padding: 5px 0px;
+}
+footer .sec_right .contact_holder p span {
+  font-weight: 400;
+}
+footer .sec_right .copyright_holder {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 5px;
+  margin: 0%;
+}
+footer .sec_right .copyright_holder .desc {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0px;
+}
+footer .sec_right .copyright_holder .website, footer .sec_right .copyright_holder .copyright {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+footer .sec_right .copyright_holder .website {
+  font-style: oblique;
+  margin-top: 2em;
+}
+@media screen and (min-width: 45em) {
+  footer {
+    grid-template-columns: 1fr minmax(320px, 45%);
+    grid-template-rows: 1fr;
+  }
+  footer .sec_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  footer .sec_left a {
+    font-size: 1.8em;
+    text-align: left;
+    text-indent: 15%;
+    width: 350px;
+  }
+  footer .sec_left a span {
+    display: inline-block;
+    font-size: 1rem;
+    text-indent: 15px;
+  }
+  footer .sec_right {
+    grid-column: 2/3;
+    grid-row: 1/2 !important;
+  }
+}
+
+.App.theme_changed > footer .sec_left {
+  background: #212121;
+}
+.App.theme_changed > footer .sec_left a {
+  color: #FFB600;
+}
+.App.theme_changed > footer .sec_left a:hover {
+  color: #FFF;
+}
+.App.theme_changed > footer .sec_right {
+  background: linear-gradient(to top, #848484 90%, rgba(33, 33, 33, 0.53));
+}
+.App.theme_changed > footer .sec_right .contact_holder p {
+  color: #FFF;
+}
+.App.theme_changed > footer .sec_right .copyright_holder .desc {
+  color: #FFF;
+}
+.App.theme_changed > footer .sec_right .copyright_holder .website, .App.theme_changed > footer .sec_right .copyright_holder .copyright {
+  width: 100%;
+  text-align: center;
+  color: #111;
+}
+
+main #about_container {
+  display: grid;
+  grid-template-columns: 38% 62%;
+  grid-template-rows: 30px 30px 20px 40px 50px 10px 30px 50px 50px 10px;
+  background: #d7d7d7;
+  transition: 280ms ease-out;
+}
+main #about_container .img_holder {
+  display: inline-block;
+  height: 260px;
+  width: 260px;
+  background: #3884D4;
+  border-radius: 50%;
+  grid-column: 1/2;
+  grid-row: 2/8;
+  justify-self: center;
+  transition: 300ms ease-out;
+  overflow: hidden;
+}
+main #about_container .img_holder img {
+  height: auto;
+  width: 260px;
+  transform: scale(1.2);
+}
+main #about_container .img_holder:hover {
+  transition: 350ms ease-in;
+  background-color: #4898ED;
+}
+main #about_container h1, main #about_container h2 {
+  font-family: "Patrick Hand", cursive;
+  color: #111;
+}
+main #about_container h2 {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-size: 3.4em;
+  color: #646464;
+}
+main #about_container h1 {
+  grid-column: 2/3;
+  grid-row: 5/6;
+  font-size: 4.3em;
+  text-indent: 2.8em;
+  letter-spacing: 2px;
+}
+main #about_container h3 {
+  grid-column: 2/3;
+  grid-row: 7/8;
+  text-indent: 7.8em;
+  font-size: 2em;
+  font-family: "Sunflower", sans-serif;
+  color: #323232;
+  letter-spacing: 3px;
+}
+main #about_container h3 span {
+  font-weight: 400;
+  color: #646464;
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 1280px) {
+  main #about_container {
+    grid-template-columns: 10% 30% 65%;
+    grid-template-rows: 30px 30px 20px 20px 50px 60px 60px 50px 40px 20px;
+  }
+  main #about_container .img_holder {
+    grid-column: 2/3;
+    grid-row: 3/8;
+  }
+  main #about_container h2 {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    font-size: 3.8em;
+  }
+  main #about_container h1 {
+    grid-column: 3/4;
+    grid-row: 6/7;
+  }
+  main #about_container h3 {
+    grid-column: 3/4;
+  }
+}
+@media screen and (max-width: 940px) {
+  main #about_container h1 {
+    text-indent: 2em;
+  }
+  main #about_container h3 {
+    text-indent: 6em;
+  }
+}
+@media screen and (max-width: 840px) {
+  main #about_container h2 {
+    font-size: 3em;
+  }
+  main #about_container h1 {
+    font-size: 4.1em;
+    text-indent: 1.2em;
+  }
+  main #about_container h3 {
+    font-size: 1.8em;
+    text-indent: 5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #about_container {
+    grid-template-columns: 5% 30% minmax(320px, 65%);
+    grid-template-rows: 10px 20px 30px 30px 40px 20px 20px 20px 20px 10px;
+  }
+  main #about_container .img_holder, main #about_container h1, main #about_container h2, main #about_container h3 {
+    grid-column: 3/4;
+    transform: scale(0.8);
+  }
+  main #about_container .img_holder {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    grid-column: 2/3;
+    grid-row: 2/8;
+  }
+  main #about_container .img_holder img {
+    width: 200px;
+  }
+  main #about_container h2 {
+    font-size: 2.5em;
+    grid-row: 4/5;
+    margin-left: -10px;
+  }
+  main #about_container h1 {
+    margin-left: -10px;
+    font-size: 3em;
+    text-indent: 1.2em;
+    grid-row: 5/6;
+    min-width: 350px;
+  }
+  main #about_container h3 {
+    margin-left: -10px;
+    font-size: 1.4em;
+    text-indent: 4em;
+    grid-row: 6/7;
+    min-width: 320px;
+  }
+}
+main #progress_container {
+  background: #c4c4c4;
+  transition: 280ms ease-out;
+}
+main #projects_container {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  grid-template-rows: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #c4c4c4;
+  transition: 280ms ease-out;
+}
+main #projects_container input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  height: 0%;
+  width: 0%;
+}
+main #projects_container .design_bar, main #projects_container .design_prjs {
+  grid-row: 1/2;
+}
+main #projects_container .app_dev_bar, main #projects_container .app_dev_prjs {
+  grid-row: 2/3;
+}
+main #projects_container .web_dev_bar, main #projects_container .web_dev_prjs {
+  grid-row: 3/4;
+}
+main #projects_container .design_bar, main #projects_container .app_dev_bar, main #projects_container .web_dev_bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  grid-column: 1/3;
+  height: 80px;
+  font-family: "Sunflower", sans-serif;
+  background: #929292;
+  border-bottom: 4px solid #d7d7d7;
+  transition: 280ms ease-out;
+}
+main #projects_container .design_bar span, main #projects_container .app_dev_bar span, main #projects_container .web_dev_bar span {
+  display: block;
+  height: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+main #projects_container .design_bar:hover, main #projects_container .app_dev_bar:hover, main #projects_container .web_dev_bar:hover {
+  cursor: pointer;
+  position: relative;
+  background: #007CFF;
+  transition: 280ms ease-in;
+  color: #FFF;
+}
+main #projects_container .design_bar:hover::before, main #projects_container .design_bar:hover:after, main #projects_container .app_dev_bar:hover::before, main #projects_container .app_dev_bar:hover:after, main #projects_container .web_dev_bar:hover::before, main #projects_container .web_dev_bar:hover:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-left: 25px solid #464646;
+  border-top: 38px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 38px solid transparent;
+}
+main #projects_container .design_bar:hover::before, main #projects_container .app_dev_bar:hover::before, main #projects_container .web_dev_bar:hover::before {
+  right: 0px;
+  border-right: 25px solid #464646;
+  border-left: 50px solid transparent;
+}
+main #projects_container label:nth-child(8) {
+  border-bottom: 4px solid transparent;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  height: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  transform: rotate(180deg);
+  transition: 280ms ease-in;
+  padding: 20px 15px;
+  height: 320px;
+  grid-column: 1/2;
+  border-bottom: none;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar span,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar span,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar span {
+  display: block;
+  height: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.2em;
+  text-indent: 20px;
+  transition: 280ms ease-out;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar .whitespace,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar .whitespace,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar .whitespace {
+  display: none;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar::before, main #projects_container #design_bar_trigger:checked + .design_bar:after,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar::before,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:after,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar::before,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:after {
+  content: none;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar:after,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:after,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-top: 75px solid #025CBB;
+  border-left: 100px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 40px solid transparent;
+  transition: 280ms ease-in;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar:hover,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:hover,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:hover {
+  border-top: none;
+}
+main #projects_container #design_bar_trigger:checked + .design_bar:hover:after,
+main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:hover:after,
+main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:hover:after {
+  content: "";
+  border-top: 75px solid #c4c4c4;
+  transition: 280ms ease-in;
+}
+main #projects_container .design_prjs, main #projects_container .app_dev_prjs, main #projects_container .web_dev_prjs {
+  display: none;
+  grid-column: 2/3;
+  transition: 280ms ease-out;
+}
+main #projects_container .design_prjs .sub_container, main #projects_container .app_dev_prjs .sub_container, main #projects_container .web_dev_prjs .sub_container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 320px;
+  width: auto;
+  top: 0%;
+  left: 0%;
+}
+main #projects_container .design_prjs .sub_container .prj, main #projects_container .app_dev_prjs .sub_container .prj, main #projects_container .web_dev_prjs .sub_container .prj {
+  position: relative;
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  margin-left: 20px;
+  max-height: 300px;
+  max-width: 360px;
+  background: #d7d7d7;
+  border-radius: 3px;
+}
+main #projects_container .design_prjs .sub_container .prj .preview h4, main #projects_container .app_dev_prjs .sub_container .prj .preview h4, main #projects_container .web_dev_prjs .sub_container .prj .preview h4 {
+  width: 360px;
+  padding: 5px 10px;
+  font-size: 1.5em;
+}
+main #projects_container .design_prjs .sub_container .prj .preview p, main #projects_container .app_dev_prjs .sub_container .prj .preview p, main #projects_container .web_dev_prjs .sub_container .prj .preview p {
+  padding: 0px 0px 10px 10px;
+  font-size: 1.2em;
+  font-family: "Sunflower", sans-serif;
+}
+main #projects_container .design_prjs .sub_container .prj .preview .img_holder, main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder, main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder {
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+main #projects_container .design_prjs .sub_container .prj .preview .img_holder img, main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder img, main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder img {
+  height: auto;
+  width: 100%;
+  max-height: 240px;
+  max-width: 360px;
+  background: #929292;
+}
+main #projects_container .design_prjs .sub_container .prj .preview .img_holder .overlay, main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder .overlay, main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder .overlay {
+  position: absolute;
+  display: inline-block;
+  height: 270px;
+  width: 360px;
+  top: 0%;
+  left: 0%;
+  background: rgba(255, 255, 255, 0.8);
+  transition: 280ms ease-out;
+}
+main #projects_container .design_prjs .sub_container .prj .preview .img_holder:hover .overlay, main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder:hover .overlay, main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder:hover .overlay {
+  background: none;
+  transition: 280ms ease-in;
+}
+main #projects_container .design_prjs .sub_container .prj .preview button, main #projects_container .app_dev_prjs .sub_container .prj .preview button, main #projects_container .web_dev_prjs .sub_container .prj .preview button {
+  position: absolute;
+  top: 0%;
+  right: 10px;
+  padding: 0px 5px;
+  border: none;
+  background: none;
+  font-size: 1.8em;
+  color: #111;
+  transform: translateY(75%);
+  transition: 280ms ease-out;
+}
+main #projects_container .design_prjs .sub_container .prj .preview button:hover, main #projects_container .app_dev_prjs .sub_container .prj .preview button:hover, main #projects_container .web_dev_prjs .sub_container .prj .preview button:hover {
+  cursor: pointer;
+  color: #007CFF;
+}
+main #projects_container .design_prjs .sub_container .prj .preview.deactive .img_holder, main #projects_container .app_dev_prjs .sub_container .prj .preview.deactive .img_holder, main #projects_container .web_dev_prjs .sub_container .prj .preview.deactive .img_holder {
+  display: none;
+}
+main #projects_container .design_prjs .sub_container .prj .preview.deactive:hover button, main #projects_container .app_dev_prjs .sub_container .prj .preview.deactive:hover button, main #projects_container .web_dev_prjs .sub_container .prj .preview.deactive:hover button {
+  color: #FFF;
+}
+main #projects_container .design_prjs .sub_container .prj .view, main #projects_container .app_dev_prjs .sub_container .prj .view, main #projects_container .web_dev_prjs .sub_container .prj .view {
+  display: none;
+}
+main #projects_container .design_prjs .sub_container .prj .view.active, main #projects_container .app_dev_prjs .sub_container .prj .view.active, main #projects_container .web_dev_prjs .sub_container .prj .view.active {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  max-height: 230px;
+  transition: 280ms ease-out;
+  overflow: hidden;
+}
+main #projects_container .design_prjs .sub_container .prj .view.active .link, main #projects_container .app_dev_prjs .sub_container .prj .view.active .link, main #projects_container .web_dev_prjs .sub_container .prj .view.active .link {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 100px;
+  width: 100%;
+  color: #FFF;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+}
+main #projects_container .design_prjs .sub_container .prj .view.active .link:after, main #projects_container .app_dev_prjs .sub_container .prj .view.active .link:after, main #projects_container .web_dev_prjs .sub_container .prj .view.active .link:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-bottom: 30px solid #025CBB;
+  border-right: 30px solid #025CBB;
+  border-top: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+main #projects_container .design_prjs .sub_container .prj .view.active .link a, main #projects_container .app_dev_prjs .sub_container .prj .view.active .link a, main #projects_container .web_dev_prjs .sub_container .prj .view.active .link a {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-50%, -45%);
+  color: #FFF;
+  font-size: 1.8em;
+  text-decoration: none;
+  z-index: 4;
+}
+main #projects_container .design_prjs .sub_container .prj .view.active .desc, main #projects_container .app_dev_prjs .sub_container .prj .view.active .desc, main #projects_container .web_dev_prjs .sub_container .prj .view.active .desc {
+  display: inline-block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 10px 25px 30px 25px;
+  font-size: 1.4em;
+  text-indent: 30px;
+  color: #111;
+}
+main #projects_container .design_prjs .sub_container .prj:hover, main #projects_container .app_dev_prjs .sub_container .prj:hover, main #projects_container .web_dev_prjs .sub_container .prj:hover {
+  cursor: pointer;
+  background: #007CFF;
+  transition: 280ms ease-in;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .preview h4, main #projects_container .design_prjs .sub_container .prj:hover .preview p, main #projects_container .app_dev_prjs .sub_container .prj:hover .preview h4, main #projects_container .app_dev_prjs .sub_container .prj:hover .preview p, main #projects_container .web_dev_prjs .sub_container .prj:hover .preview h4, main #projects_container .web_dev_prjs .sub_container .prj:hover .preview p {
+  color: #FFF;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive h4, main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive p, main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive h4, main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive p, main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive h4, main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive p {
+  color: #FFF;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive button, main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive button, main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive button {
+  color: #FFF;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .view.active .desc, main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .desc, main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .desc {
+  color: #FFF;
+  transition: 240ms ease-in;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .view.active .link:after, main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .link:after, main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .link:after {
+  content: "";
+  position: absolute;
+  border-bottom: 30px solid #d7d7d7;
+  border-right: 30px solid #d7d7d7;
+}
+main #projects_container .design_prjs .sub_container .prj:hover .view.active .link a, main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .link a, main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .link a {
+  color: #025CBB;
+}
+main #projects_container .design_prjs.expanded, main #projects_container .app_dev_prjs.expanded, main #projects_container .web_dev_prjs.expanded {
+  display: block;
+  height: 320px;
+  width: 100%;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  border-bottom: 2px solid #d7d7d7;
+}
+
+.App.theme_changed > main #about_container {
+  background: #212121;
+}
+.App.theme_changed > main #about_container .img_holder {
+  background: #FDC135;
+}
+.App.theme_changed > main #about_container .img_holder:hover {
+  background-color: #ffba1b;
+}
+.App.theme_changed > main #about_container h1, .App.theme_changed > main #about_container h2 {
+  color: #FFF;
+}
+.App.theme_changed > main #about_container h2 {
+  color: #d7d7d7;
+}
+.App.theme_changed > main #about_container h3 {
+  color: #FFF;
+}
+.App.theme_changed > main #about_container h3 span {
+  color: #d7d7d7;
+}
+.App.theme_changed > main #projects_container {
+  background: #323232;
+}
+.App.theme_changed > main #projects_container .design_bar, .App.theme_changed > main #projects_container .app_dev_bar, .App.theme_changed > main #projects_container .web_dev_bar {
+  border-bottom: 4px solid #646464;
+  color: #FFF;
+  background: #464646;
+}
+.App.theme_changed > main #projects_container .design_bar:hover, .App.theme_changed > main #projects_container .app_dev_bar:hover, .App.theme_changed > main #projects_container .web_dev_bar:hover {
+  background: #FFB600;
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_bar:hover::before, .App.theme_changed > main #projects_container .design_bar:hover:after, .App.theme_changed > main #projects_container .app_dev_bar:hover::before, .App.theme_changed > main #projects_container .app_dev_bar:hover:after, .App.theme_changed > main #projects_container .web_dev_bar:hover::before, .App.theme_changed > main #projects_container .web_dev_bar:hover:after {
+  border-left: 25px solid #929292;
+}
+.App.theme_changed > main #projects_container .design_bar:hover::before, .App.theme_changed > main #projects_container .app_dev_bar:hover::before, .App.theme_changed > main #projects_container .web_dev_bar:hover::before {
+  border-right: 25px solid #929292;
+}
+.App.theme_changed > main #projects_container #design_bar_trigger:checked + .design_bar:after,
+.App.theme_changed > main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:after,
+.App.theme_changed > main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:after {
+  content: "";
+  border-top: 75px solid #DAA520;
+  transition: 280ms ease-in;
+}
+.App.theme_changed > main #projects_container #design_bar_trigger:checked + .design_bar:hover,
+.App.theme_changed > main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:hover,
+.App.theme_changed > main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:hover {
+  border-top: none;
+}
+.App.theme_changed > main #projects_container #design_bar_trigger:checked + .design_bar:hover:after,
+.App.theme_changed > main #projects_container #app_dev_bar_trigger:checked + .app_dev_bar:hover:after,
+.App.theme_changed > main #projects_container #web_dev_bar_trigger:checked + .web_dev_bar:hover:after {
+  content: "";
+  border-top: 75px solid #646464;
+  transition: 280ms ease-in;
+}
+.App.theme_changed > main #projects_container label:nth-child(8) {
+  border-bottom: 4px solid transparent;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj {
+  background: #646464;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview h4, .App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview p, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview h4, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview p, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview h4, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview p {
+  color: #FFF;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview .img_holder img, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder img, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder img {
+  background: #929292;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview .img_holder .overlay, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder .overlay, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder .overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview .img_holder:hover .overlay, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview .img_holder:hover .overlay, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview .img_holder:hover .overlay {
+  background: none;
+  transition: 280ms ease-in;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview button, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview button, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview button {
+  color: #FFF;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview button:hover, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview button:hover, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview button:hover {
+  color: #FFB600;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview.deactive:hover h4, .App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview.deactive:hover p, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview.deactive:hover h4, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview.deactive:hover p, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview.deactive:hover h4, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview.deactive:hover p {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .preview.deactive:hover button, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .preview.deactive:hover button, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .preview.deactive:hover button {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .view.active .link, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .view.active .link, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .view.active .link {
+  color: #FFF;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .view.active .link:after, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .view.active .link:after, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .view.active .link:after {
+  content: "";
+  position: absolute;
+  border-bottom: 30px solid #DAA520;
+  border-right: 30px solid #DAA520;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .view.active .link a, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .view.active .link a, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .view.active .link a {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj .view.active .desc, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj .view.active .desc, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj .view.active .desc {
+  color: #FFF;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover {
+  color: #111;
+  background: #FFB600;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .desc, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .desc, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .desc {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .preview h4, .App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .preview p, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .preview h4, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .preview p, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .preview h4, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .preview p {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive h4, .App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive p, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive h4, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive p, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive h4, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive p {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .preview.deactive button, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .preview.deactive button, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .preview.deactive button {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .view.active .desc, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .desc, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .desc {
+  color: #111;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .view.active .link:after, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .link:after, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .link:after {
+  content: "";
+  position: absolute;
+  border-bottom: 30px solid #646464;
+  border-right: 30px solid #646464;
+}
+.App.theme_changed > main #projects_container .design_prjs .sub_container .prj:hover .view.active .link a, .App.theme_changed > main #projects_container .app_dev_prjs .sub_container .prj:hover .view.active .link a, .App.theme_changed > main #projects_container .web_dev_prjs .sub_container .prj:hover .view.active .link a {
+  color: #FFB600;
+}
+.App.theme_changed > main #projects_container .design_prjs.expanded, .App.theme_changed > main #projects_container .app_dev_prjs.expanded, .App.theme_changed > main #projects_container .web_dev_prjs.expanded {
+  border-bottom: 2px solid #464646;
+}/*# sourceMappingURL=App.css.map */

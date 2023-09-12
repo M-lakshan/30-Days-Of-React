@@ -1,0 +1,23 @@
+@import "./_colors_n_fonts";
+@import "./_mixins";
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  position: relative;
+  @include dp_block(block,100%,100%);
+  min-height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  // background: rgb(9, 19, 103) //remove
+}
+
+@import "./_header";
+@import "./_footer";
+@import "./_main";
