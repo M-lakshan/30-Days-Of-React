@@ -1,0 +1,27 @@
+#Q 01] What is the importance of React Folder Structure and File Naming?
+  - as an ethic, regarding the understanding of file management & ease-of-use
+
+#Q 02] How do you export a file?
+  - using just the keyword 'export' or with 'export default' for single exports
+
+#Q 03] How do you import a file?
+  - using the keyword 'import', then within curly brackets the identifier 
+
+#Q 04] Make a component of a module and export it as named or default export
+  - //App.js
+      const App = () => <></>;
+      export default App;
+  - //App.js
+      export const App = () => <></>;
+
+#Q 05] Make a component or module and import it
+  - //index.js
+      import App from "./App.js";
+
+  - //index.js
+      import { App } from "./App.js";
+
+      const WebSite = () => <div> <App /> </div>;
+
+#Q 06] Change all the components you have to different folder structure
+  - //already_done
