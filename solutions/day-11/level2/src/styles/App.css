@@ -1,0 +1,35 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background: rgb(9, 19, 103);
+}
+
+h2 {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  height: auto;
+  width: 280px;
+  background: yellowgreen;
+  color: darkblue;
+  font-size: 3em;
+  text-align: center;
+  margin: 20px;
+  padding: 6px 0px 12px 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
