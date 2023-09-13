@@ -21,7 +21,7 @@
   - onSubmit
 
 #Q 08] Display the coordinate of the view port when a mouse is moving on the body?
-  -  const trackMouseMovement = (e) => console.log(`position: X-axis ${e.clientX} | Y-axis ${e.clientY}`);
+  -  const trackMouseMovement = (e) => console.log(`position: X-axis ${e.pageX} | Y-axis ${e.pageY}`);
       <body onMouseMove={trackMouseMovement(evt)}></body>
 
 #Q 09] What is the difference between onInput, onChange and onBlur?
