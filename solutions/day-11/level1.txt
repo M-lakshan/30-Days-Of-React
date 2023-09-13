@@ -1,0 +1,33 @@
+#Q 01] What is an event?
+  - an action or an occurence that recognized by the SW
+
+#Q 02] What is the different between an HTML element event and React event?
+  - events are named using camelCase
+  - we pass a function as the event handler using JSX, rather than a string
+
+#Q 03] Write at least 4 keyboard events?
+  - onKeyDown, onKeyUp, onKeyPress, onInput
+
+#Q 04] Write at least 8 mouse events?
+  - onClick, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onDrag, onSubmit
+
+#Q 05] What are the most common mouse and keyboard events?
+  - onClick, onSubmit, onMouseMove
+
+#Q 06] Write an event specific to input element?
+  - onChange
+
+#Q 07] Write an event specific to form element?
+  - onSubmit
+
+#Q 08] Display the coordinate of the view port when a mouse is moving on the body?
+  -  const trackMouseMovement = (e) => console.log(`position: X-axis ${e.clientX} | Y-axis ${e.clientY}`);
+      <body onMouseMove={trackMouseMovement(evt)}></body>
+
+#Q 09] What is the difference between onInput, onChange and onBlur?
+  - onInput: triggers while inputing some value
+  - onChange: triggers right after the exsisting value changes
+  - onBlur: triggers right after when we focus out from an element
+
+#Q 10] Where do we put the onSubmit event ?
+  - inside the opening tag of <form></form> element
