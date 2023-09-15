@@ -1,0 +1,29 @@
+#Q 01] What is a controlled input?
+  - when the component itself handles data flow of it's input elements they called controlled inputs
+
+#Q 02] What is an uncontrolled input
+  - when the DOM handles data flow of input elements they called uncontrolled inputs
+
+#Q 03] How do you get content of a certain HTML element in React?
+  - by accessing the 'value' attribute in event handlers
+
+#Q 04] Why it is not a good idea to touch the DOM directly in React?
+  - changing the DOM directly is usually bad because the state of the page should come directly from the state in React.
+
+#Q 05] What is most frequently used in React? Controlled or Uncontrolled input.
+  - controlled inputs
+
+#Q 06] What do you need to write uncontrolled input?
+  - accessing standard JS element references(HTML 'ref') 
+
+#Q 07] Does the state require to write uncontrolled input?
+  - no
+
+#Q 08] When do you use uncontrolled input?
+  - when we want to get a raw value of something quickly
+
+#Q 09] When do you use controlled input?
+  - when a value represents itself on behalf of its component's state
+
+#Q 10] Do you use a controlled or uncontrolled input to validate form input fields?
+  - controlled type
