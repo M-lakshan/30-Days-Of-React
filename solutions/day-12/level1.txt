@@ -1,0 +1,46 @@
+#Q 01] What is the importance of form?
+  - for data collection
+
+#Q 02] How many input types do you know?
+  - know at least 20
+
+#Q 03] Mention at least four attributes of an input element
+  - for, type, placeholder, value
+
+#Q 04] What is the importance of htmlFor?
+  - replacement of HTML attribute 'for' because in JSX keyword 'for' is used for 'for-loops'. To prevent the conflict JSX used 'htmlFor'
+
+#Q 05] Write an input type which not given in the example if there?
+  - all possibilities are given
+
+#Q 06] What is a controlled input?
+  - input value is controlled by a state
+
+#Q 07] What do you need to write a controlled input?
+  - so React controls the value of the input fields
+
+#Q 08] What event type do you use to listen changes on an input field?
+  - onKeyPress events
+
+#Q 09] What is the value of a checked checkbox?
+  - by default, it is 'on' or the pre-defined value 
+
+#Q 10] When do you use onChange, onBlur, onSubmit?
+  - onSubmit: triggers when the form element is tried to push data as submission
+  - onChange: triggers right after the existing value changes
+  - onBlur: triggers right after when we focus out from an element
+
+#Q 11] What is the purpose of writing e.preventDefault() inside the submit handler method?
+  - suspending the default form-submission action
+
+#Q 12] How do you bind data in React? The first input field example is data binding in React.
+  - based on the state in react, a process of viewing the element data from an input field in another place of a UI
+
+#Q 13] What is validation?
+  - checking the validity & accuracy of the data provided
+
+#Q 14] What is the event type you use to listen when an input changes?
+  - onChange events
+
+#Q 15] What event types do you use to validate an input?
+  - JS regular expressions
