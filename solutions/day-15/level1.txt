@@ -1,0 +1,31 @@
+#Q 01] What is a package?
+  - a collection of predefined methods to solve specific problem set
+
+#Q 02] What is a third party package?
+  - a package that was not primarily developed by the same creators of a specific platform for it's intended for. 
+
+#Q 03] Do you have to use third party packages?
+  - yes, most probably
+
+#Q 04] How do you know the popularity and stability of a third-party package?
+  - considering the number of downloads, community engagement, usages, version history & documentation quality
+
+#Q 05] How many JavaScript packages are there on the npm registry?
+  - over 1.4 million
+
+#Q 06] How do you install a third party package?
+  - using the terminal through NODE-PACAKAGE-MANAGER or YARN
+
+#Q 07] What packages do you use most frequently?
+  - node-sass
+  - react-icons
+  - axios
+
+#Q 08] What package do you use to fetch data?
+  - axios
+
+#Q 09] What is the purpose of classnames package?
+  - dynamically generate classnames for HTML elements based on certain conditions & states
+
+#Q 10] What is the purpose validator package?
+  - facilitate the validation process of the inputs in SW development
